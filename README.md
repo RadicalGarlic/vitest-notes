@@ -37,10 +37,10 @@ export default defineConfig({
 ```
 
 ### Exclude test files from TypeScript compilation
-Specify an `exclude` pattern to have TypeScript compiling skip unit test files (https://www.typescriptlang.org/tsconfig/#exclude). Otherwise, running vitest will run the compiled unit test files as well, unless explicitly ignored.
+Specify an `exclude` pattern to have TypeScript compiling skip unit test files (https://www.typescriptlang.org/tsconfig/#exclude). Otherwise, running vitest will run the compiled unit test files as well, unless explicitly ignored. The exclude pattern should also include the `outDir` (usually `dist`) in order to build.
 ```
 {
-  "exclude": ["**/*.test.ts"],
+  "exclude": ["dist/**", "**/*.test.ts"],
   "compilerOptions": {
     ...
   }
