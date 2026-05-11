@@ -1,7 +1,7 @@
 {
   "name": "vitest-notes",
   "version": "1.0.0",
-  "description": "While Jest (https://jestjs.io) is the classic go-to unit testing framework for JavaScript/TypeScript, vitest (https://vitest.dev) is looking like it may soon usurp that throne. Apparently it fixes a lot of headaches around mocking.",
+  "description": "Vitest cheat sheet",
   "homepage": "https://github.com/RadicalGarlic/vitest-notes#readme",
   "bugs": {
     "url": "https://github.com/RadicalGarlic/vitest-notes/issues"
@@ -13,7 +13,7 @@
   "license": "ISC",
   "author": "",
   "type": "module",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "build": "npx tsc",
     "test": "npx vitest run --coverage"
