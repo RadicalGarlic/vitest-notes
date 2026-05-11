@@ -12,7 +12,8 @@ From there, the command `npx vitest run` should work. Create `*.test.(js|ts)` or
 
 Run `npx vitest run --coverage` to also generate code coverage information.
 
-## TypeScript non-relative imports
+## Notable configs
+### TypeScript non-relative imports
 If you're using vitest with a Typescript project that uses a custom baseUrl setting, you will have to set the following configuration in your "vitest.config.js" or similar.
 ```
 import { defineConfig } from 'vitest/config';
@@ -35,6 +36,16 @@ export default defineConfig({
 });
 ```
 
+### Exclude test files from TypeScript compilation
+Specify an `exclude` pattern to have TypeScript compiling skip unit test files (https://www.typescriptlang.org/tsconfig/#exclude). Otherwise, running vitest will run the compiled unit test files as well, unless explicitly ignored.
+```
+{
+  "exclude": ["**/*.test.ts"],
+  "compilerOptions": {
+    ...
+  }
+}
+```
 
 
 
