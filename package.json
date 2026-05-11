@@ -1,0 +1,24 @@
+{
+  "name": "vitest-notes",
+  "version": "1.0.0",
+  "description": "While Jest (https://jestjs.io) is the classic go-to unit testing framework for JavaScript/TypeScript, vitest (https://vitest.dev) is looking like it may soon usurp that throne. Apparently it fixes a lot of headaches around mocking.",
+  "homepage": "https://github.com/RadicalGarlic/vitest-notes#readme",
+  "bugs": {
+    "url": "https://github.com/RadicalGarlic/vitest-notes/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RadicalGarlic/vitest-notes.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.5"
+  }
+}
