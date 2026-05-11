@@ -1,6 +1,6 @@
 import { describe, beforeEach, expect, test, vi } from 'vitest'
 
-import { add } from '#this/basic.js';
+import { add } from '#this/basic/basic.js';
 
 describe('example', () => {
   test('sum', () => {

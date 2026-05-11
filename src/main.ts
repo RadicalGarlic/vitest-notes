@@ -1,3 +1,2 @@
-import { add } from "#this/basic.js";
-
-console.log(add(3,0));
+import { add } from './basic/basic.js';
+console.log(add(1, 2));
