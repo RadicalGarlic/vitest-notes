@@ -4,11 +4,13 @@ While Jest (https://jestjs.io) is the classic go-to unit testing framework for J
 Vitest can be used without the greater vite framework. Configuration can only be done through "vitest.config.js" (instead of combined with "vite.config.js") if vitest is being used standalone.
 https://vitest.dev/guide/#configuring-vitest
 
-
+## Installation and usage
 Installation is straightforward. Just install vitest to the dev dependencies (`npm install -D vitest`).
 https://vitest.dev/guide/#adding-vitest-to-your-project
 
-From there, the command `npx vitest` should work. Create `*.test.(js|ts)` or `*.spec.(js.ts)` files in the same directory as the files they're testing and they should get picked up automatically.
+From there, the command `npx vitest run` should work. Create `*.test.(js|ts)` or `*.spec.(js.ts)` files in the same directory as the files they're testing and they should get picked up automatically.
+
+Run `npx vitest run --coverage` to also generate code coverage information.
 
 ## TypeScript non-relative imports
 If you're using vitest with a Typescript project that uses a custom baseUrl setting, you will have to set the following configuration in your "vitest.config.js" or similar.
