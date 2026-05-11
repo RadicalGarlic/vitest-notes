@@ -13,7 +13,7 @@
     "lib": ["ES2023"],
     "types": ["node"],
     "paths": {
-        "*": ["./src/*"],
+        "#this/*": ["./src/*"],
     },
 
     // Other Outputs
