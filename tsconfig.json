@@ -8,9 +8,13 @@
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
     "module": "node20",
+    "moduleResolution": "node16",
     "target": "es2025",
     "lib": ["ES2023"],
     "types": ["node"],
+    "paths": {
+        "*": ["./src"],
+    },
 
     // Other Outputs
     "sourceMap": true,

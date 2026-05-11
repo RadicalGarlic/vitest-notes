@@ -15,10 +15,11 @@ Run `npx vitest run --coverage` to also generate code coverage information.
 ## TypeScript non-relative imports
 If you're using vitest with a Typescript project that uses a custom baseUrl setting, you will have to set the following configuration in your "vitest.config.js" or similar.
 ```
-import { defineConfig } from 'vitest/config'
+import { defineConfig } from 'vitest/config';
+
 export default defineConfig({
   resolve: {
-    tsconfigPaths: true
+    tsconfigPaths: true,
   }
 });
 ```
@@ -26,10 +27,11 @@ export default defineConfig({
 This used to require the additional package "vite-tsconfig-paths", but is now included in the base vitest package. Configuration looked like the following.
 https://vitest.dev/guide/common-errors.html#cannot-find-module-relative-path
 ```
-import { defineConfig } from 'vitest/config'
-import tsconfigPaths from 'vite-tsconfig-paths'
+import { defineConfig } from 'vitest/config';
+import tsconfigPaths from 'vite-tsconfig-paths';
+
 export default defineConfig({
-  plugins: [tsconfigPaths()]
+  plugins: [tsconfigPaths()],
 });
 ```
 
